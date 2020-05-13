@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="This site provides a simple selection of financial tools to help with making financial decisions." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign07.css">
+  <title>Mortgage Calculator</title>
+</head>
+
+<body>
+
+  <header class="header-grid-container">
+    <h1 class="header-grid-item header-item1">Financial Tools</h1>
+    <a href="index.html" class="header-grid-item header-item2">CS 213 Assignments</a>
+  </header>
+
+  <section class="main-content">
+
+    <h2 class="section-title text-center">Mortgage Payment Calculator</h2>
+
+    <form id="payment-form">
+
+      <label for="apr" class="hand-writing">APR</label>
+      <input type="text" id="apr"  class="hand-writing" name="apr" value="5.25" onfocusout="validateForm()" onchange="updatePayment()" />
+      <div class="validation-field" id="apr-notification"></div>
+
+      <label for="term" class="hand-writing">Term (years)</label>
+      <input type="text" id="term" class="hand-writing" name="term" value="10" onfocusout="validateForm()" onchange="updatePayment()" />
+      <div class="validation-field" id="term-notification"></div>
+
+      <label for="amount" class="hand-writing">Amount (dollars)</label>
+      <input type="text" id="amount" class="hand-writing" name="amount" value="100000" onfocusout="validateForm()" onchange="updatePayment()" />
+      <div class="validation-field" id="amount-notification"></div>
+
+      <button type="button" onclick="updatePayment()">Calculate</button>
+      <button type="reset" onclick="formReset()">Reset</button>
+    </form>
+
+    <h3 class="text-center hand-writing">Payment</h3>
+    <div id="payment" class="text-center hand-writing">$ 0.00</div>
+
+  </section>
+
+  <footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+  <script src="scripts/assign07.js"></script>
+</body>
+
+</html>

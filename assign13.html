@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Adrian's Music Center is hosting a piano competition." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign13.css">
+  <title>Piano Competition - Adrian's Music Center</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <p class="font-cinzel logo">AMC</p>
+      <a href="index.html" class="home-link">CS 213 Assignments</a>
+    </nav>
+  </header>
+  <div class="main">
+    <p class="font-cinzel banner">Adrian's Music Center</p>
+    <h1>AMC's Annual Piano Competition</h1>
+    <div class="columns">
+      <section>
+        <picture>
+          <source srcset="images/concert-hall-500.jpg" media="(max-width: 650px)" />
+          <source srcset="images/concert-hall-1000.jpg" media="(min-width: 650px)" />
+          <img src="images/concert-hall-500.jpg" alt="AMC Concert Hall" />
+        </picture>
+        <h2>The competition is fierce for 2021</h2>
+        <p>
+          Hello and welcome to the official registration page for Adrian's Music Center's 
+          9th Annual Piano Competition. This year is shaping up to be our most competitive 
+          yet, so please take a moment to make sure competitors are properly registered 
+          using the form below.
+        </p>
+        <form id="registrationForm">
+          <fieldset>
+            <Legend>Performance Details</Legend>
+            <ul>
+              <li>
+                <div class="input-area">
+                  <label for="performance">Performance Type</label>
+                  <select name="performance" id="performance" required>
+                    <option value="">Select</option>
+                    <option value="solo">Solo</option>
+                    <option value="duet">Duet</option>
+                    <option value="concerto">Concerto</option>
+                  </select>
+                </div>
+                <div id="performance_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="skill">Skill Level</label>
+                  <select id="skill" name="skill" required>
+                    <option value="">Select</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="pre-advanced">Pre-advanced</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                </div>
+                <div id="skill_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="instrument">Instrument</label>
+                  <select id="instrument" name="instrument" required>
+                    <option value="">Select</option>
+                    <option value="piano">Piano</option>
+                    <option value="voice">Voice</option>
+                    <option value="string">String</option>
+                    <option value="organ">Organ</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div id="instrument_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="radio-container">
+                  <label>Location</label>
+                  <div class="radio-items">
+                    <label><input type="radio" name="location" value="snow" required />Snow</label>
+                    <label><input type="radio" name="location" value="austin" />Austin</label>
+                  </div>
+                </div>
+                <div id="location_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="room">Room #</label>
+                  <input id="room" name="room" type="text" placeholder="202" required />
+                </div>
+                <div id="room_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="time_slot">Time Slot</label>
+                  <select id="time_slot" name="time_slot" required>
+                    <option value="">Select</option>
+                    <option value="10:00 am">10:00 AM</option>
+                    <option value="10:30 am">10:30 AM</option>
+                    <option value="11:00 am">11:00 AM</option>
+                    <option value="11:30 am">11:30 AM</option>
+                    <option value="12:00 pm">12:00 PM</option>
+                    <option value="12:30 pm">12:30 PM</option>
+                    <option value="1:00 pm">1:00 PM</option>
+                    <option value="1:30 pm">1:30 PM</option>
+                    <option value="2:00 pm">2:00 PM</option>
+                    <option value="2:30 pm">2:30 PM</option>
+                    <option value="3:00 pm">3:00 PM</option>
+                    <option value="3:30 pm">3:30 PM</option>
+                    <option value="4:00 pm">4:00 PM</option>
+                    <option value="4:30 pm">4:30 PM</option>
+                  </select>
+                </div>
+                <div id="time_slot_notification" class="notification error"></div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Competitor</legend>
+            <ul id="competitorList">
+              <li>
+                <div class="input-area">
+                  <label for="first_name_01">First Name</label>
+                  <input id="first_name_01" name="first_name_01" type="text" placeholder="John" required />
+                </div>
+                <div id="first_name_01_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="last_name_01">Last Name</label>
+                  <input id="last_name_01" name="last_name_01" type="text" placeholder="Doe" required />
+                </div>
+                <div id="last_name_01_notification" class="notification error"></div>
+              </li>
+              <li>
+                <div class="input-area">
+                  <label for="student_id_01">Student ID</label>
+                  <input id="student_id_01" name="student_id_01" type="text" placeholder="123" required />
+                </div>
+                <div id="student_id_01_notification" class="notification error"></div>
+              </li>
+            </ul>
+          </fieldset>
+          <div id="buttons">
+            <button type="reset" onclick="clearNotifications();">Clear</button>
+            <button type="button" onclick="addEntry();">Register</button>
+          </div>
+          <div id="submit_notification" class="notification"></div>
+        </form>
+      </section>
+
+      <section id="registrations-section">
+        <h2 class="font-poppins">Registrations</h2>
+        <div id="delete_notification" class="notification"></div>
+        <div id="registration-list">
+          <div class="card">
+            <p><span class="card-th">Student: </span><span>John Doe - 123</span></p>
+            <p><span class="card-th">Student: </span><span>Jane Doe - 234</span></p>
+            <p><span class="card-th">Type: </span><span>Duet</span></p>
+            <p><span class="card-th">Skill Level: </span><span>Intermediate</span></p>
+            <p><span class="card-th">Instrument: </span><span>Piano</span></p>
+            <p><span class="card-th">Location: </span><span>Snow</span></p>
+            <p><span class="card-th">Room #: </span><span>201</span></p>
+            <p><span class="card-th">Time Slot: </span><span>12:30 PM</span></p>
+          </div>
+          <div class="card">
+            <p><span class="card-th">Student: </span><span>John Doe - 123</span></p>
+            <p><span class="card-th">Type: </span><span>Duet</span></p>
+            <p><span class="card-th">Skill Level: </span><span>Intermediate</span></p>
+            <p><span class="card-th">Instrument: </span><span>Piano</span></p>
+            <p><span class="card-th">Location: </span><span>Snow</span></p>
+            <p><span class="card-th">Room #: </span><span>201</span></p>
+            <p><span class="card-th">Time Slot: </span><span>12:30 PM</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+  <script src="scripts/assign13.js"></script>
+</body>
+
+</html>

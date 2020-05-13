@@ -1,0 +1,68 @@
+body, html {
+  margin: 0 auto;
+  background-color: #f2d6ac;
+  font-family: 'Abel', sans-serif;
+}
+
+#main {
+  max-width: 700px;
+  margin: auto;
+}
+
+header>div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#homepage_link {
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  display: block;
+}
+
+#logo {
+  align-items: flex-end;
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Medula One', cursive;
+  color: #705d53;
+  padding: 10px 0px;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 46px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p, label, a:link, a:visited {
+  font-weight: bold;
+  font-size: 20px;
+  color: #524a3d;
+  text-decoration: none;
+}
+
+table {
+  margin: 20px;
+}

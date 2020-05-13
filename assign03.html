@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign03.css">
+
+  <title>Adrian Lane's Home Page</title>
+</head>
+
+<body>
+
+<header>
+
+<div id="nav-area">
+
+<nav>
+  <ul>
+    <li><a href="index.html">CS 213 Assignments</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#survey">Survey</a></li>
+</ul>
+</nav>
+
+<div id="contact-section">
+  <div id="contact-phone"><a href="tel:1-909-900-9935"><em>909-900-9935</em></a></div>
+  <div id="contact-email"><a href="mailto:lan16009@byui.edu"><em>lan16009@byui.edu</em></a></div>
+</div>
+
+</div><!-- #nav-area -->
+  
+<div id="title-area">
+
+<img src="images/logo-200x200.png" alt="AJL Logo" />
+<h1>WELCOME TO ADRIAN LANE'S HOME PAGE</h1>
+
+</div><!-- #title-area -->
+
+</header>
+
+<div id="main-content">
+
+<div id="section-content">
+
+<section id="about-section">
+
+<h2 id="about">ABOUT</h2>
+<a href="https://www.linkedin.com/in/adrian-lane-9516499/" target="_blank"><img src="images/me-min.png" alt="Me" /></a>
+<div class="about-me-highlight">
+  <span class="heading"><strong>Name</strong></span>
+  <span class="value">Adrian Lane</span>
+</div>
+<div class="about-me-highlight">
+  <span class="heading"><strong>Major</strong></span>
+  <span class="value">Computer Information Technology</span>
+</div>
+<div class="about-me-highlight">
+  <span class="heading"><strong>Location</strong></span>
+  <span class="value">Meridian, Idaho</span>
+</div>
+<p>Hello from Meridian, Idaho, I'm Adrian Lane. This is my last semester and truth be told, <em>I'm looking forward to being done!</em> I've been in IT for many years in some capacity or another, but I'd say the bulk of my experience has been in systems administration, operations, and support. For the last few years, it's been largely spent in direct support of application life-cycle management. I'm currently a DevOps Team Lead, but any position with DevOps in the title is ambiguous at best. My areas of focus are build and release automation, cloud architecture and infrastructure automation, monitoring and support with a little SRE sprinkled in, regulatory compliance, process and standard development, and business continuity. I'm one of those jack-of-all-trades, master of none types... not because I never wanted to specialize in anything, but more so because I was always so dang curious about understanding and getting involved with what everyone else was doing in addition to my own responsibilities. I've been hands on keyboard for a long time, my current career goals are to help others grow in their careers, help organizations set goals to reach new heights, and inspire teams to <strong>crush</strong> them. </p>
+<blockquote>
+  <p>"It's never too late to be what you might have been."</p>
+  <footer>
+    — <cite><a href="https://quoteinvestigator.com/2013/11/24/never-too-late/" target="_blank">Unknown</a></cite>
+  </footer>
+</blockquote>
+
+</section><!-- #about-section -->
+
+<section id="survey-section">
+
+<h2 id="survey">POST-GRAD SURVEY</h2>
+<form action="" method="post" enctype="multipart/form-data" name="post-graduation-survey" id="survey-form">
+  <fieldset>
+    <legend>Personal</legend>
+    <label for="name">
+      <span>Name</span>
+      <input name="name" type="text" placeholder="John Doe" pattern="[a-zA-Z -._]{1,99}" required />
+    </label>
+    <label for="state">
+      <span>State/Province</span>
+      <input name="state" type="text" placeholder="Oklahoma" pattern="[a-zA-Z -._]{1,99}" required />
+    </label>
+    <label for="country">
+      <span>Country</span>
+      <input name="country" type="text" placeholder="United States" pattern="[a-zA-Z -._]{1,99}" required />
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Graduation</legend>
+    <label for="grad-year">
+      <span>Graduation Year</span>
+      <input name="grad-year" type="text" placeholder="2020" minlength="4" maxlength="4" pattern="\d{4}" required />
+    </label>
+    <label for="grad-month">
+      <span>Graduation Month</span>
+      <input name="grad-month" type="radio" value="april" required /> April
+      <input name="grad-month" type="radio" value="july" /> July
+      <input name="grad-month" type="radio" value="december" /> December
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Experience</legend>
+    <label for="favorite-it-area">
+      <span>Favorite IT Area</span>
+      <select name="favorite-it-area" required>
+        <option value="">Select</option>
+        <option value="none">None</option>
+        <option value="operations">Operations</option>
+        <option value="security">Security</option>
+        <option value="development">Development</option>
+        <option value="project-management">Project Management</option>
+      </select>
+    </label>
+    <label for="after-graduation-plans">
+      <span>Post-Grad Plans</span>
+      <input name="after-graduation-plans" type="radio" value="nothing" required /> Nothing
+      <input name="after-graduation-plans" type="radio" value="find-a-job" /> Find a job
+      <input name="after-graduation-plans" type="radio" value="already-doing-it" /> Already Working
+    </label>
+    <label for="college-likes">
+      <span>You Liked about College</span>
+      <input type="checkbox" name="college-likes" value="teachers" /> Teachers
+      <input type="checkbox" name="college-likes" value="parties" /> Parties
+      <input type="checkbox" name="college-likes" value="homework" /> Homework
+    </label>
+    <label for="memorable-experience">
+      <span>Memorable Experience</span>
+      <textarea name="memorable-experience" placeholder="My most memorable experience was..." required></textarea>
+    </label>
+  </fieldset>
+  <input type="submit" name="submit" value="Submit" />
+  <input type="reset" name="reset" value="Reset" />
+</form>
+  
+  </section><!-- #survey-section -->
+
+</div><!-- #section-content -->
+
+<aside id="amelia-aside">
+
+<h3>AMELIA</h3>
+<img src="images/amelia1-min.jpg" alt="Amelia" />
+<img src="images/amelia2-min.jpg" alt="Amelia" />
+<img src="images/amelia3-min.jpg" alt="Amelia" />
+<p>This little girl is my everything! It's an odd thing to include pictures of my family in professional materials, some would even say it's inappropriate. While I'm proud of my kid and love to show her off, it's more about my dad. My dad used to wear one of those cheezy shirt pins with my baseball picture in it. Seeing him wear that all the time was just another way he expressed his love to me as a dad to show how proud he was of me. I want to do the same for my kids.</p>
+
+</aside><!-- #amelia-aside -->
+
+
+
+</div><!-- #main-content -->
+
+<footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+</body>
+
+</html>

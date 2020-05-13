@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento%7CSwanky+and+Moo+Moo&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 5vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    height:100%;
+}
+
+p {
+    padding: 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 9vh;
+}
+
+h2 {
+    font-size: 7vh;
+}
+
+h3 {
+    font-size: 6vh;
+}
+
+nav {
+    background: #f2f5dd;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+.subtitle {
+    color: #007030;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#233329, #63D471);
+}
+
+.banner-header {
+    text-align: right;
+}
+
+.banner-header a {
+    font-size: 2vh;
+    padding-right: 10px;
+}
+
+.banner-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside > div > h2 {
+    color: #007030;
+}
+
+.banner-picture img {
+    min-width: 100%;
+}
+
+.banner-title {
+    padding-left: 10px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item a {
+    color: #007030;
+    font-size: 3vh;
+}
+
+#news {
+    background-image: url(../images/college-transparent-1280px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(#233329, #63D471);
+    color: white;
+}
+
+footer p {
+    padding: 5px 20px;
+}
+
+.flex-item {
+    object-fit: contain;
+}
+
+.responsive-image {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    align-self: center;
+}
+
+.aside-item {
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container img {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+}
+
+.topic-grid-section-title h2 {
+    text-align: left;
+}
+
+.sports-grid-title h2 {
+    text-align: left;
+}
+
+.sports-grid-content p {
+    padding-left: 10px;
+}
+
+.sports-grid-image {
+    margin: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    * {
+        font-size: 4vh;
+    }
+        .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 20px;
+    }
+
+    .menu-item {
+        font-size: 2vh;
+        border-left: 1px solid #d8d9da;
+    }
+
+    .menu-item:last-child {
+        border-right: 1px solid #d8d9da;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    } 
+
+    .flex-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .topic-grid-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 10fr 2fr;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .topic-grid-section-title {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1
+    }
+
+    .topic-grid-section-content {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .sports-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 1fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    .sports-grid-title {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .sports-grid-image {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .sports-grid-content {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        align-self: center;
+    }
+
+    .flex-content {
+        flex-grow: 1;
+        flex-basis: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .art-flex-container {
+        flex-direction: column;
+    }
+
+    .bigger-content-item {
+        flex: 0 0 60%;
+    }
+
+    .smaller-content-item {
+        flex: 0 0 40%;
+    }
+}

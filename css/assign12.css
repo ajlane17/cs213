@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento%7CSwanky+and+Moo+Moo&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 2vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+}
+
+h1 {
+    font-size: 3vh;
+    font-family: 'Oswald', 'san-serif';
+}
+
+header {
+    border-bottom: 1px solid grey;
+}
+
+form {
+    padding: 1em;
+    background: lightblue;
+    border: 1px solid slategrey;
+    border-radius: 15px;
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+form label {
+    grid-column: 1;
+    text-align: right;
+    padding-right: 10px;
+    margin: 5px 0;
+}
+
+form input {
+    background: white;
+    border: 1px solid grey;
+    grid-column: 2;
+    margin: 5px 0;
+}
+
+form > .validation-field {
+    grid-column: 2;
+}
+
+form button {
+    background: grey;
+    color: white;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    grid-column: 2;
+    margin: 5px 0;
+}
+
+form button:hover {
+    background: green;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: right;
+    border-top: 1px solid grey;
+}
+
+footer p {
+    padding: 5px;
+}
+
+input[type=text] {
+    padding: 4px;
+}
+
+input:focus {
+    outline: 2px solid green;
+}
+
+.section-title {
+    font-family: 'Oswald', 'san-serif';
+    font-size: 2.5vh;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header-grid-container {
+    display: grid;
+
+}
+
+.header-grid-item {
+    padding: 5px;
+}
+
+.header-item1 {
+    grid-row: 1;
+}
+
+.header-item2 {
+    grid-row: 1;
+    text-align: right;
+}
+
+.validation-field {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.hand-writing {
+    font-family: 'Swanky and Moo Moo', serif;
+    font-size: 2.8vh;
+}
+
+.card_line_item_header {
+    display: inline-block;
+    min-width: 200px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#distanceCards {
+    grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 500px) {
+    .card_line_item_header {
+        width: 100%;
+        background-color: lightgrey;
+    }
+
+    button {
+        margin: 10px;
+    }
+}

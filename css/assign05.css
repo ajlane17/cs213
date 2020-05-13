@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento%7CSwanky+and+Moo+Moo&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 5vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    height:100%;
+}
+
+p {
+    padding: 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 9vh;
+}
+
+h2 {
+    font-size: 7vh;
+}
+
+h3 {
+    font-size: 6vh;
+}
+
+nav {
+    background: #19282D;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #304A69;
+    color: white;
+}
+
+footer p {
+    padding: 5px 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item a {
+    font-size: 3vh;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#title-area {
+    background-color: #304A69;
+    color: white;
+}
+
+#title-area p {
+    font-family: 'Swanky and Moo Moo', cursive;
+}
+
+.title-flex, .section-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 650px) {
+    * {
+        font-size: 3vh;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu a {
+        padding: 20px;
+    }
+
+    .menu-item a {
+        font-size: 2vh;
+    }
+
+    .title-flex {
+        flex-direction: row;
+    }
+
+    .title-flex-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-flex-item img {
+        max-height: 650px;
+    }
+
+    .section-flex {
+        flex-direction: row;
+    }
+
+    .section-flex-item {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}

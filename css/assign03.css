@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 2vh;
+    margin: 0px;
+}
+
+html,body {
+    margin:0px;
+    padding:0px;
+    height:100%;
+    background-color: #fbf3f2;
+}
+
+body {
+    padding-top: 46px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2 {
+    font-size: 5vh;
+}
+
+h2 {
+    padding: 50px 0 20px 0;
+    color: #1c768f;
+}
+
+h3 {
+    font-size: 4vh;
+    color: #fbf3f2;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding-left: 0;
+}
+
+img {
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #fa991c, #fbf3f2) 1 100%;
+    border-image-slice: 1;
+}
+
+p {
+    padding-top: 5px;
+}
+
+blockquote {
+    padding: 20px;
+}
+
+blockquote p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section, aside {
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+footer {
+    background-color: #032539;
+    color: #fbf3f2;
+    text-align: right;
+    padding: 5px 20px;;
+}
+
+blockquote footer {
+    background-color: inherit;
+    color: inherit;
+    text-align: inherit;
+    padding: inherit;
+}
+
+#nav-area {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #032539;
+    color: #fbf3f2;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    top: 0;
+}
+
+#nav-area a {
+    color: #fbf3f2;
+}
+
+#contact-section {
+    padding: 2px 12px 2px 0;
+}
+
+#nav-area div:last-child {
+    margin-left: auto;
+  }
+
+#contact-section {
+    text-align: right;
+}
+
+#title-area {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    background-image: url('../images/mountain.jpg');
+    background-size: cover;
+    color: #fbf3f2;
+    padding-left: 20px;
+}
+
+#title-area img {
+    margin: 0 0 0 20px;
+    border-width: 0;
+    border-style: none;
+    border-image: none;
+    border-image-slice: 0;
+}
+
+#main-content {
+    display: flex;
+}
+
+#amelia-aside {
+    max-width: 20%;
+    background-color: #1c768f;
+}
+
+#amelia-aside * {
+    max-width: 95%;
+    color: #fbf3f2;
+}
+
+#amelia-aside img {
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #032539, #1c768f) 1 100%;
+    border-image-slice: 1;
+}
+
+.about-me-highlight {
+    padding: 5px 0;
+}
+
+.heading strong {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3vh;
+    padding-right: 5px;
+    color: #032539;
+}
+
+#survey-section {
+    margin-bottom: 20px;
+}
+
+#survey-section fieldset {
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #032539;
+    box-shadow: inset 0px 0px 5px #fa991c;
+}
+
+#survey-section legend {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5vh;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fbf3f2;
+    border-top: 1px solid #032539;
+	border-left: 1px solid #032539;
+    border-right: 1px solid #032539;
+}
+
+#survey-section label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    clear: left;
+}
+
+#survey-section label > span {
+    float: left;
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2vh;
+    vertical-align:top;
+}
+
+#survey-section textarea {
+    width: 100%;
+    height: 100px;
+}

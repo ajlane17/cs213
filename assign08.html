@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="This site provides a simple selection of items available for purchase." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign08.css">
+  <title>Check Out - AJ's Shopping Site</title>
+</head>
+
+<body onload="populatePurchaseItems()">
+
+  <header class="header-grid-container">
+    <h1 class="header-grid-item header-item1">AJ's Shopping Site</h1>
+    <a href="index.html" class="header-grid-item header-item2">CS 213 Assignments</a>
+  </header>
+
+  <section class="main-content">
+
+    <h2 class="section-title text-center">Check Out</h2>
+
+    <form id="payment-form" onreset="formReset()" onsubmit="return submitPurchase()">
+      <fieldset>
+        <legend>Customer Details</legend>
+        <label for="first_name" class="hand-writing text-label">First Name</label>
+        <input type="text" id="first_name" name="first_name" onchange="validateFirstName()" />
+        <div class="validation-field" id="first_name_notification"></div>
+
+        <label for="last_name" class="hand-writing text-label">Last Name</label>
+        <input type="text" id="last_name" name="last_name" onchange="validateLastName()" />
+        <div class="validation-field" id="last_name_notification"></div>
+
+        <label for="address" class="hand-writing text-label">Address</label>
+        <textarea rows="3" id="address" name="address" onchange="validateAddress()"></textarea>
+        <div class="validation-field" id="address_notification"></div>
+
+        <label for="phone" class="hand-writing text-label">Phone</label>
+        <input type="text" id="phone" name="phone" onchange="validatePhone()" />
+        <div class="validation-field" id="phone_notification"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Purchase Items</legend>
+        <ul id="item_list">
+        </ul>
+        <div class="validation-field" id="items_notification"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment</legend>
+
+        <ul>
+          <li>
+            <input type="radio" id="visa" name="card" value="visa" onchange="validateCardType()" />
+            <label for="visa" class="hand-writing">Visa</label>
+          </li>
+          <li>
+            <input type="radio" id="mastercard" name="card" value="mastercard" onchange="validateCardType()" />
+            <label for="mastercard" class="hand-writing">Mastercard</label>
+          </li>
+          <li>
+            <input type="radio" id="amex" name="card" value="amex" onchange="validateCardType()" />
+            <label for="amex" class="hand-writing">American Express</label>
+          </li>
+          <li>
+            <input type="radio" id="discover" name="card" value="discover" onchange="validateCardType()" />
+            <label for="discover" class="hand-writing">Discover</label>
+          </li>
+        </ul>
+        <div class="validation-field" id="card_notification"></div>
+
+        <label for="credit_card" class="hand-writing text-label">Credit Card #</label>
+        <input type="text" id="credit_card" name="credit_card" onchange="validateCCNumber()" />
+        <div class="validation-field" id="credit_card_notification"></div>
+
+        <label for="exp_date" class="hand-writing text-label">Credit Card Expiration</label>
+        <input type="text" id="exp_date" name="exp_date" onchange="validateCCExp()" />
+        <div class="validation-field" id="exp_date_notification"></div>
+      </fieldset>
+
+      <h3 class="hand-writing">Total</h3>
+      <div id="total" class="hand-writing">$ 0.00</div>
+
+      <button type="submit">Validate</button>
+      <button type="reset">Reset</button>
+    </form>
+
+  </section>
+
+  <footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+  <script src="scripts/assign08.js"></script>
+</body>
+
+</html>

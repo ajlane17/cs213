@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="This site provides an example of how one might interact with files and JSON." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign09.css">
+  <title>Working with Ajax and JSON</title>
+</head>
+
+<body>
+
+  <header class="header-grid-container">
+    <h1 class="header-grid-item header-item1">Working with Ajax and JSON</h1>
+    <a href="index.html" class="header-grid-item header-item2">CS 213 Assignments</a>
+  </header>
+
+  <section>
+    <h2 class="section-title text-center">Most Populated Cities by Country</h2>
+    <form onkeypress="return event.keyCode != 13;">
+      <label for="country_selection">Country</label>
+      <select id="country_selection" name="country_selection" onchange="DisplayCountryData();">
+        <option value="">--Select--</option>
+      </select>
+      <table id="country_table"></table>
+      <div id="country_notification" class="validation-field"></div>
+    </form>
+  </section>
+
+  <section>
+    <h2 class="section-title text-center">Display Student Data</h2>
+    <form onkeypress="return event.keyCode != 13;">
+      <label for="file_path">File</label>
+      <input type="text" id="file_path" name="file_path" value="json.txt" />
+      <button type="button" onclick="DisplayStudentData();">Display</button>
+      <div id="student_cards"></div>
+      <div id="student_notification" class="validation-field"></div>
+    </form>
+  </section>
+
+  <footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+  <script src="scripts/assign09.js"></script>
+</body>
+
+</html>

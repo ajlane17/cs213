@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento%7CSwanky+and+Moo+Moo&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 2vh;
+    margin: 0px;
+}
+
+html,body {
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+p {
+    color: #19282D;
+    padding: 0px;
+}
+
+h2 {
+    color: #304A69;
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5vh;
+}
+
+.title-area {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title-area img {
+    max-width: 100%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.nav-bar a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 2vh;
+}
+
+#title {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    text-align: left;
+}
+
+#title h1 {
+    color: white;
+    font-family: 'Swanky and Moo Moo', cursive;
+}
+
+#title p {
+    color: white;
+    font-size: 3vh;
+}
+
+section {
+    padding: 20px;
+}

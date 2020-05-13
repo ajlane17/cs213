@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CQuattrocento%7CSwanky+and+Moo+Moo&display=swap');
+
+* {
+    font-family: 'Quattrocento', serif;
+    font-size: 2vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+}
+
+h1 {
+    font-size: 3vh;
+    font-family: 'Oswald', 'san-serif';
+}
+
+h2 {
+    font-size: 2.5vh;
+    font-family: 'Oswald', 'san-serif';
+    margin: 20px 0;
+}
+
+header {
+    border-bottom: 1px solid grey;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #b3dff7;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+thead {
+    font-weight: bolder;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: right;
+    border-top: 1px solid grey;
+}
+
+footer p {
+    padding: 5px;
+}
+
+.header-grid-container {
+    display: grid;
+
+}
+
+.header-grid-item {
+    padding: 5px;
+}
+
+.header-item1 {
+    grid-row: 1;
+}
+
+.header-item2 {
+    grid-row: 1;
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    background: grey;
+    color: white;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: green;
+}
+
+.error-notification {
+    color: darkred;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 300px;
+}

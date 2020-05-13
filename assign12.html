@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="This site provides an example of how one might interact with files and JSON." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/assign12.css">
+  <title>Working with Ajax and APIs</title>
+</head>
+
+<body>
+
+  <header class="header-grid-container">
+    <h1 class="header-grid-item header-item1">Working with Ajax and APIs</h1>
+    <a href="index.html" class="header-grid-item header-item2">CS 213 Assignments</a>
+  </header>
+
+  <section>
+    <h2 class="section-title text-center">Display Travel Data</h2>
+    <form onkeypress="return event.keyCode != 13;">
+      <label for="startCity">Starting City</label>
+      <input type="text" id="startCity" name="startCity" value="Boise" />
+      <div class="validation-field" id="startCityNotification"></div>
+      <label for="startState">Starting State</label>
+      <input type="text" id="startState" name="startState" value="ID" />
+      <div class="validation-field" id="startStateNotification"></div>
+      <label for="endCity">Destination City</label>
+      <input type="text" id="endCity" name="endCity" value="Denver" />
+      <div class="validation-field" id="endCityNotification"></div>
+      <label for="endState">Destination State</label>
+      <input type="text" id="endState" name="endState" value="CO" />
+      <div class="validation-field" id="endStateNotification"></div>
+      <button type="button" onclick="displayDistance();">Display</button>
+      <div id="distanceCards"></div>
+      <div id="distanceNotification" class="validation-field"></div>
+    </form>
+  </section>
+
+  <footer><p>&copy; 2020 Adrian Lane</p></footer>
+
+  <script src="scripts/assign12.js"></script>
+</body>
+
+</html>
